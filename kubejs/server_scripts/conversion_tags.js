@@ -942,6 +942,7 @@ ServerEvents.tags('item', event => {
 	event.get('raspberry_flavoured:copycat')
 		.add('copycats:copycat_block')
 		.add('copycats:copycat_stairs')
+		.add('copycats:copycat_vertical_stairs')
 		
 	event.get('raspberry_flavoured:copycat_half')
 		.add('copycats:copycat_slab')
@@ -954,6 +955,30 @@ ServerEvents.tags('item', event => {
 		.add('create:copycat_step')
 		.add('copycats:copycat_vertical_step')
 		.add('copycats:copycat_beam')
+		.add('copycats:copycat_shaft')
+	
+	event.get('raspberry_flavoured:copycat_octant')
+		.add('copycats:copycat_byte')
+		.add('copycats:copycat_pane')
+		.add('copycats:copycat_flat_pane')
+		.add('copycats:copycat_layer')
+		
+	event.get('raspberry_flavoured:copycat_double_octant')
+		.add('copycats:copycat_slice')
+		.add('copycats:copycat_vertical_slice')
+		.add('copycats:copycat_corner_slice')
+		.add('copycats:copycat_half_layer')
+		.add('copycats:copycat_vertical_half_layer')
+		.add('copycats:copycat_stacked_half_layer')
+
+	event.get('raspberry_flavoured:copycat_functional')
+		.add('copycats:copycat_shaft')
+		.add('copycats:copycat_cogwheel')
+		.add('copycats:copycat_large_cogwheel')
+		.add('copycats:copycat_fluid_pipe')
+		.add('copycats:copycat_door')
+		.add('copycats:copycat_sliding_door')
+		.add('copycats:copycat_folding_door')
 		
 	event.get('raspberry_flavoured:terracotta')
 		.add('minecraft:terracotta')

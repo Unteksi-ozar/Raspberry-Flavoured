@@ -133,7 +133,22 @@ ServerEvents.recipes(event => {
 		event.stonecutting('2x ' + id, '#raspberry_flavoured:copycat_half')
 		event.stonecutting('1x ' + id, '#raspberry_flavoured:copycat_quarter')
     })
+	Ingredient.of('#raspberry_flavoured:copycat_octant').itemIds.forEach(id => {
+		event.stonecutting('8x ' + id, '#raspberry_flavoured:copycat')
+		event.stonecutting('4x ' + id, '#raspberry_flavoured:copycat_half')
+		event.stonecutting('2x ' + id, '#raspberry_flavoured:copycat_quarter')
+		event.stonecutting('1x ' + id, '#raspberry_flavoured:copycat_octant')
+    })
+	Ingredient.of('#raspberry_flavoured:copycat_double_octant').itemIds.forEach(id => {
+		event.stonecutting('16x ' + id, '#raspberry_flavoured:copycat')
+		event.stonecutting('8x ' + id, '#raspberry_flavoured:copycat_half')
+		event.stonecutting('4x ' + id, '#raspberry_flavoured:copycat_quarter')
+		event.stonecutting('2x ' + id, '#raspberry_flavoured:copycat_octant')
+		event.stonecutting('1x ' + id, '#raspberry_flavoured:copycat_double_octant')
+    })
 	event.stonecutting('2x copycats:copycat_wall', '#forge:ingots/zinc').id('copycats:stonecutting/copycat_wall')
+	event.stonecutting('2x copycats:copycat_fence', '#forge:ingots/zinc').id('copycats:stonecutting/copycat_fence')
+	event.stonecutting('2x copycats:copycat_fence_gate', '#forge:ingots/zinc').id('copycats:stonecutting/copycat_fence_gate')
 	
 	// Sand -> Sandstone
 	Ingredient.of('#raspberry_flavoured:sandstone').itemIds.forEach(id => {
